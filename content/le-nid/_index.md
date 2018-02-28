@@ -1,9 +1,8 @@
 ---
-title: "Lifestyle"
-slug: "blogs"
+layout: blogs
+title: Le Nid
+slug: le-nid
+date: 2017-11-01T03:27:21.000Z
 image: pic02.jpg
-date: 2017-10-31T22:27:21-05:00
-draft: false
 ---
-
-My blogs about technology and lifestyle.
+Oú vos enfants apprennent à voler
