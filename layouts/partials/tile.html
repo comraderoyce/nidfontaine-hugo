@@ -1,0 +1,14 @@
+{{ "<!-- Header -->" | safeHTML }}
+    <section id="one" class="tiles">
+        {{ range where .Data.Pages "Type" "tile" }}
+        <article>
+            <span class="image">
+                <img src="{{ $.Site.Params.baseURL }}img/uploads/{{ .Params.image }}" alt="" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ .Params.url }}" class="link">{{ .Title }}</a></h3>
+                <p>{{ .Params.subtitle }}</p>
+            </header>
+        </article>
+        {{ end }}
+    </section>
