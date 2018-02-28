@@ -22,7 +22,7 @@ collections:
   - name: "home" # Used in routes, e.g., /admin/collections/blog
     label: "Home" # Used in the UI
     folder: "content/home" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
+    create: false  
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
@@ -30,3 +30,27 @@ collections:
       - {label: "URL", name: "url", widget: "string"}
       - {label: "Background Image", name: "image", widget: "image"}
       - {label: "Type", name: "type", widget: "string"}
+  - name: "la-fontaine" # Used in routes, e.g., /admin/collections/blog
+    label: "La Fontaine" # Used in the UI
+    folder: "content/la-fontaine" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "string", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "home" # Used in routes, e.g., /admin/collections/blog
+    label: "Home" # Used in the UI
+    folder: "content/home" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "string", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
