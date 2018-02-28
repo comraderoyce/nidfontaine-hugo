@@ -27,7 +27,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Button Text", name: "buttonText", widget: "string"}
-      - {label: "URL", name: "url", widget: "string"}
+      - {label: "CTA URL", name: "cta_url", widget: "string"}
       - {label: "Background Image", name: "image", widget: "image"}
       - {label: "Type", name: "type", widget: "string"}
   - name: "la-fontaine" # Used in routes, e.g., /admin/collections/blog
