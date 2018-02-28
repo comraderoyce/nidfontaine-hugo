@@ -20,7 +20,9 @@
 				{{ end }}
 
 				{{ if .Site.Params.Two.enable }}
-					{{ partial "two.html" . }}
+					{{ with .Site.GetPage "page" "home/two.md" }}}
+						{{ partial "two.html" . }}
+					{{ end }}
 				{{ end }}
 
 			</div>
