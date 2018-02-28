@@ -49,12 +49,12 @@ googleAnalytics = ""
       url = "blogs"
 
     [[params.navigation.links]]
-      name = "Generic Blog"
-      url = "blogs/ipsum"
+      name = "Le Nid"
+      url = "/le-nid"
 
     [[params.navigation.links]]
-      name = "Elements"
-      url = "elements.html"
+      name = "La Fontaine"
+      url = "/la-fontaine"
 
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
@@ -65,8 +65,8 @@ googleAnalytics = ""
 
     # Button Style 1
     [[params.navigation.button1]]
-      name = "Get Started"
-      url = "blogs"
+      name = "Learn More"
+      url = "About"
 
     # Button Style 2
     [[params.navigation.button2]]
