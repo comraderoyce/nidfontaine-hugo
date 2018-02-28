@@ -1,9 +1,9 @@
 ---
-title: "Le Nid"
-subtitle: "Oú vos enfants apprennent à voler"
-image: "pic01.jpg"
-cta_url: ""
-type: "tile"
-draft: false
+title: Le Nid
+subtitle: Oú vos enfants apprennent à voler
+buttonText: Savoir Plus
+cta_url: /le-nid
+image: pic01.jpg
+type: tile
 ---
 
