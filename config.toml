@@ -1,6 +1,6 @@
 # Site settings
-baseURL = "http://example.org/"
-languageCode = "fr-us"
+baseURL = "https://nidfontaine.com"
+languageCode = "fr"
 title = "Nid Fontaine"
 theme = "forty-fontaine"
 
