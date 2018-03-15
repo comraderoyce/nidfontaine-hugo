@@ -8,7 +8,12 @@
 		<div id="wrapper">
 
 			{{ partial "nav.html" . }}
-			{{ with .Site.GetPage "page" "home/banner.md" }}
+
+			{{ range .Resources }}
+			<li><a href="{{ .RelPermalink }}">{{ .ResourceType | title }}</a></li>
+			{{ end }}
+
+			{{ with .Site.GetPage "page" "home/banner.md"}}
 				{{ partial "banner.html" . }}
 			{{ end }}
 
